@@ -116,7 +116,7 @@ upload_button = widgets.Button(description="Upload Image")
 upload_button.on_click(upload_image)
 
 # Create buttons for filters
-filter_buttons = [widgets.Button(description=filter_type) for filter_type in ['HPF', 'LPF', 'Mean Filter', 'Median Filter', 'Robert Edge Detector', 'Prewitt Edge Detector', 'Sobel Edge Detector', 'Erosion', 'Dilation', 'Open', 'Close', 'Hough Transform for Circle', 'Segmentation using Region Split and Merge', 'Segmentation using Thresholding']]
+filter_buttons = [widgets.Button(description=filter_type) for filter_type in ['Prewitt Edge Detector', 'Sobel Edge Detector', 'Erosion', 'Dilation', 'Open']]
 for button in filter_buttons:
     button.on_click(on_button_click)
 
